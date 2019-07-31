@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="-36.231884057971016" y="120.53571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Limit View Controller-->
         <scene sceneID="vXT-76-Wxp">
             <objects>
-                <viewController id="3Ba-Of-DX6" sceneMemberID="viewController">
+                <viewController id="3Ba-Of-DX6" customClass="LimitViewController" customModule="CashCube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dbg-Sy-eZ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="-36.231884057971016" y="809.59821428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Spending Feedback View Controller-->
         <scene sceneID="pQL-et-GJb">
             <objects>
-                <viewController id="gRJ-pe-wFB" sceneMemberID="viewController">
+                <viewController id="gRJ-pe-wFB" customClass="SpendingFeedbackViewController" customModule="CashCube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ccu-RQ-r0o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="866.66666666666674" y="820.98214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CashCube" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MenuPageViewController" customModule="CashCube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="852.17391304347836" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Receipt View Controller-->
         <scene sceneID="CGh-0n-hfQ">
             <objects>
-                <viewController id="Ekp-wW-4IG" sceneMemberID="viewController">
+                <viewController id="Ekp-wW-4IG" customClass="ReceiptViewController" customModule="CashCube" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g93-hL-HDg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,21 +260,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Amount here" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QPK-iJ-Csl">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Amount" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QPK-iJ-Csl">
                                 <rect key="frame" x="62" y="271" width="291" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.29192735819999999" green="0.5" blue="0.35125240899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="57"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Vendor" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxM-2D-ROc">
-                                <rect key="frame" x="82" y="499" width="251" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.29192735819999999" green="0.5" blue="0.35125240899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="67"/>
-                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOZ-gS-k5p">
                                 <rect key="frame" x="82" y="656" width="251" height="99"/>
@@ -284,6 +276,9 @@
                                 <state key="normal" title="Let's go!">
                                     <color key="titleColor" red="0.29192735819999999" green="0.5" blue="0.35125240899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="letsGo1:" destination="Ekp-wW-4IG" eventType="touchUpInside" id="6Ij-Cp-KQK"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bv7-Kj-cc9">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -298,10 +293,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Vendor" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxM-2D-ROc">
+                                <rect key="frame" x="82" y="492" width="251" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29192735819999999" green="0.5" blue="0.35125240899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="67"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.5186368777" green="0.77704631980000005" blue="0.40186905070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zTH-0s-f8k"/>
                     </view>
+                    <connections>
+                        <outlet property="amount" destination="QPK-iJ-Csl" id="Q0N-QC-1m7"/>
+                        <outlet property="vendor" destination="cxM-2D-ROc" id="Ke8-hk-lN9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3Q-42-1Hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
