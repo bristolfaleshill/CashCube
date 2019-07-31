@@ -15,18 +15,26 @@ class ReceiptViewController: UIViewController {
     var allReceipts : [String : Double] = [:]
     
     @IBAction func letsGo1(_ sender: UIButton) {
-       // if let vendorName = vendor.text {
-         //   label.text = vendorName
-       // }
+
         if let amountString = amount.text, let vendorName = vendor.text{
             let amountInt = Double(amountString)
             allReceipts[vendorName] = amountInt
             print(allReceipts)
+            
+            let alertController = UIAlertController(title:"You've spent blank today!", message:"Happy spending", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title:"OK", style:UIAlertAction.Style.default, handler:nil))
+            present(alertController, animated: true, completion: nil)
         }
+    }
+    
+    func totalFunc()->Double{
+        var total = 0.0
+        for (key,value) in allReceipts{
+            total += value
         }
+        return total
+    }
             //= Double(amount.text!)
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
