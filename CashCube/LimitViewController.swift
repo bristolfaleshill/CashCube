@@ -10,13 +10,23 @@ import UIKit
 
 class LimitViewController: UIViewController {
 
+    
     @IBOutlet weak var setBudget: UITextField!
     @IBAction func letsGo2(_ sender: UIButton) {
         
         if let budgetString = setBudget.text{
             let budgetInt = Double(budgetString)
             print(budgetInt!)
+            if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+                let budgetToSave = Limit(entity: Limit.entity(), insertInto: context)
+                
+                budgetToSave.limitValue = limitDouble.Double
+                
+            }
         }
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {

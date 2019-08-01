@@ -281,12 +281,20 @@
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="67"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNX-qU-L6F">
+                                <rect key="frame" x="186" y="352" width="115" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.5186368777" green="0.77704631980000005" blue="0.40186905070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zTH-0s-f8k"/>
                     </view>
                     <connections>
                         <outlet property="amount" destination="QPK-iJ-Csl" id="Q0N-QC-1m7"/>
+                        <outlet property="label1" destination="MNX-qU-L6F" id="hpn-s5-7N5"/>
                         <outlet property="vendor" destination="cxM-2D-ROc" id="Ke8-hk-lN9"/>
                     </connections>
                 </viewController>
@@ -300,6 +308,6 @@
         <image name="Screen Shot 2019-08-01 at 10.26.12 AM" width="348" height="532"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3fI-ei-job"/>
+        <segue reference="308-iv-BoL"/>
     </inferredMetricsTieBreakers>
 </document>
