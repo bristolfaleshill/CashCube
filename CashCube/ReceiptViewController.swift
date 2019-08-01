@@ -8,9 +8,12 @@
 
 import UIKit
 
+
 class ReceiptViewController: UIViewController{
     @IBOutlet weak var amount: UITextField!
     @IBOutlet weak var vendor: UITextField!
+   
+    
     
     var allReceipts : [String : Double] = [:]
     
@@ -25,11 +28,13 @@ class ReceiptViewController: UIViewController{
             allReceipts[vendorName] = amountInt
             print(allReceipts)
             let money = totalFunc()
+            var interbudget = LimitViewController()
             let alertController = UIAlertController(title:"You've spent $\(money) of your $\(fakeBudget) budget today!", message:"Be mindful and happy spending", preferredStyle: UIAlertController.Style.alert)
             alertController.addAction(UIAlertAction(title:"OK", style:UIAlertAction.Style.default, handler:nil))
             present(alertController, animated: true, completion: nil)
         }
     }
+    
     
     func totalFunc()->Double{
         var total = 0.0

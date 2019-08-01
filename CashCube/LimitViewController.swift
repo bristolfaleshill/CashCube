@@ -20,15 +20,17 @@ class LimitViewController: UIViewController {
             
             if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
                 let budgetToSave = Limit(entity: Limit.entity(), insertInto: context)
-                
-                budgetToSave.limitValue = budgetDouble ?? 0
-                
+
+               budgetToSave.limitValue = budgetDouble ?? 0
+
             }
         }
+        
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
         
         navigationController?.popViewController(animated: true)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
