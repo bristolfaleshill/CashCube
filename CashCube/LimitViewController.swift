@@ -10,6 +10,15 @@ import UIKit
 
 class LimitViewController: UIViewController {
 
+    @IBOutlet weak var setBudget: UITextField!
+    @IBAction func letsGo2(_ sender: UIButton) {
+        
+        if let budgetString = setBudget.text{
+            let budgetInt = Double(budgetString)
+            print(budgetInt!)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
