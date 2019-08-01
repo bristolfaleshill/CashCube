@@ -20,8 +20,8 @@ class ReceiptViewController: UIViewController {
             let amountInt = Double(amountString)
             allReceipts[vendorName] = amountInt
             print(allReceipts)
-            
-            let alertController = UIAlertController(title:"You've spent blank today!", message:"Happy spending", preferredStyle: UIAlertController.Style.alert)
+            let money = totalFunc()
+            let alertController = UIAlertController(title:"You've spent $\(money) today!", message:"Happy spending", preferredStyle: UIAlertController.Style.alert)
             alertController.addAction(UIAlertAction(title:"OK", style:UIAlertAction.Style.default, handler:nil))
             present(alertController, animated: true, completion: nil)
         }

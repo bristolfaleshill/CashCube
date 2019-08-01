@@ -16,7 +16,6 @@
 		18ED7D3722F2186100A360F7 /* MenuPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED7D3622F2186100A360F7 /* MenuPageViewController.swift */; };
 		18ED7D3922F218A300A360F7 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED7D3822F218A300A360F7 /* ReceiptViewController.swift */; };
 		18ED7D3B22F218CC00A360F7 /* LimitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED7D3A22F218CC00A360F7 /* LimitViewController.swift */; };
-		18ED7D3D22F218F500A360F7 /* SpendingFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED7D3C22F218F500A360F7 /* SpendingFeedbackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		18ED7D3622F2186100A360F7 /* MenuPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPageViewController.swift; sourceTree = "<group>"; };
 		18ED7D3822F218A300A360F7 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		18ED7D3A22F218CC00A360F7 /* LimitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitViewController.swift; sourceTree = "<group>"; };
-		18ED7D3C22F218F500A360F7 /* SpendingFeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingFeedbackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 				18ED7D2122F1D7E800A360F7 /* AppDelegate.swift */,
 				18ED7D2322F1D7E800A360F7 /* ViewController.swift */,
 				18ED7D2522F1D7E800A360F7 /* Main.storyboard */,
-				18ED7D3C22F218F500A360F7 /* SpendingFeedbackViewController.swift */,
 				18ED7D3A22F218CC00A360F7 /* LimitViewController.swift */,
 				18ED7D3822F218A300A360F7 /* ReceiptViewController.swift */,
 				18ED7D3622F2186100A360F7 /* MenuPageViewController.swift */,
@@ -152,7 +149,6 @@
 			files = (
 				18ED7D3B22F218CC00A360F7 /* LimitViewController.swift in Sources */,
 				18ED7D3722F2186100A360F7 /* MenuPageViewController.swift in Sources */,
-				18ED7D3D22F218F500A360F7 /* SpendingFeedbackViewController.swift in Sources */,
 				18ED7D2A22F1D7E800A360F7 /* CashCube.xcdatamodeld in Sources */,
 				18ED7D3922F218A300A360F7 /* ReceiptViewController.swift in Sources */,
 				18ED7D2422F1D7E800A360F7 /* ViewController.swift in Sources */,
