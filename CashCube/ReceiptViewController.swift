@@ -8,18 +8,15 @@
 
 import UIKit
 
-class ReceiptViewController: UIViewController {
+class ReceiptViewController: UIViewController{
     @IBOutlet weak var amount: UITextField!
     @IBOutlet weak var vendor: UITextField!
-    
-    @IBOutlet weak var label1: UILabel!
-    
     
     var allReceipts : [String : Double] = [:]
     
     var budget : [Limit] = []
     
-    let fakeBudget = 200
+    let fakeBudget = 50
     
     @IBAction func letsGo1(_ sender: UIButton) {
 
@@ -28,7 +25,7 @@ class ReceiptViewController: UIViewController {
             allReceipts[vendorName] = amountInt
             print(allReceipts)
             let money = totalFunc()
-            let alertController = UIAlertController(title:"You've spent $\(money) of your $\(budget) today!", message:"Be mindful and happy spending", preferredStyle: UIAlertController.Style.alert)
+            let alertController = UIAlertController(title:"You've spent $\(money) of your $\(fakeBudget) budget today!", message:"Be mindful and happy spending", preferredStyle: UIAlertController.Style.alert)
             alertController.addAction(UIAlertAction(title:"OK", style:UIAlertAction.Style.default, handler:nil))
             present(alertController, animated: true, completion: nil)
         }
@@ -46,7 +43,6 @@ class ReceiptViewController: UIViewController {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
             if let coreDataLimit = try? context.fetch(Limit.fetchRequest())as?[Limit]{
                 budget = coreDataLimit
-                viewDidLoad().reloadData()
                 }
             }
         }
@@ -54,6 +50,8 @@ class ReceiptViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }

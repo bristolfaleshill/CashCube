@@ -15,12 +15,13 @@ class LimitViewController: UIViewController {
     @IBAction func letsGo2(_ sender: UIButton) {
         
         if let budgetString = setBudget.text{
-            let budgetInt = Double(budgetString)
-            print(budgetInt!)
+            let budgetDouble = Double(budgetString)
+            print(budgetDouble!)
+            
             if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
                 let budgetToSave = Limit(entity: Limit.entity(), insertInto: context)
                 
-                budgetToSave.limitValue = limitDouble.Double
+                budgetToSave.limitValue = budgetDouble ?? 0
                 
             }
         }
